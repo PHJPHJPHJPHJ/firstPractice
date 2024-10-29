@@ -183,17 +183,10 @@
 
             <section class="item">
                 <h3 class="footer-title">Twitter</h3>
-                <div class="twitter-timeline" style="display: flex; max-width: 100%;">
-                    <iframe 
-                        title="Twitter Timeline"
-                        id="twitter-widget-0" 
-                        scrolling="no" 
-                        frameborder="0" 
-                        allowtransparency="true" 
-                        allowfullscreen="true" 
-                        src="https://syndication.twitter.com/srv/timeline-profile/screen-name/X?..."></iframe>
+                <div class="twitter-timeline twitter-timeline-rendered" style="display: flex; max-width: 100%; margin-top: 0px; margin-bottom: 0px;">
+                    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" title="Twitter Timeline" src="https://syndication.twitter.com/srv/timeline-profile/screen-name/X?dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=false&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=ja&amp;maxHeight=315px&amp;origin=https%3A%2F%2Fcode-jump.com%2Fdemo%2Fhtml%2Fblog%2F&amp;sessionId=6df9c3a8d32aeb955646c8e03807519981b0900c&amp;showHeader=true&amp;showReplies=false&amp;transparent=false&amp;widgetsVersion=2615f7e52b7e0%3A1702314776716" style="position: static; visibility: visible; width: 350px; height: 315px; display: block; flex-grow: 1;"></iframe>
                 </div>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </section>
         </div>
         <h6><p class="copyright">© Travel &amp; Blog</p></h6>
@@ -202,11 +195,11 @@
 
 <style>
     .title{
-        margin-left: 350px;
+        margin-left: 20%;
     }
 
     .nav-black{
-        padding-left: 350px;
+        padding-left: 20%;
         background-color:black;
         height: 40px;
         color: white;
@@ -222,28 +215,28 @@
     }
 
     .titlePicture{
-        margin-left: 350px;
+        margin-left: 20%;
     }
 
     .nav-picture01{
         width: 400px;
         height: 450px;
-        margin-top: 30px;
+        margin-top: 3%;
         float: left;
     }
     .nav-picture02{
         width: 400px;
         height: 450;
-        margin-top: 30px;
+        margin-top: 3%;
         float: left;
-        margin-left: 20px;
+        margin-left: 2%;
     }
     .nav-picture03{
         width: 400px;
         height: 450px;
-        margin-top: 30px;
+        margin-top: 3%;
         float: left;
-        margin-left: 20px;
+        margin-left: 2%;
     }
     .nav-readMore{
         display: flex;
@@ -276,14 +269,24 @@
     footer {
         background-color: #f9f9f9;
     }
+
+    .about-list a{
+        color: black;
+        text-decoration: none;
+    }
     
     .menu-list{
         list-style: none;
     }
 
+    .menu-list a{
+        color: black;
+        text-decoration: none;
+    }
+
     .content_wrapper {
-        margin-top: 300px;
-        padding-left: 300px;
+        margin-top: 20%;
+        padding-left: 15%;
         display: flex;
     }
 
