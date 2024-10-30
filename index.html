@@ -109,21 +109,21 @@
                 <section class="ranking">
                     <h3 class="side-title">Ranking</h3>
                     <article>
-                        <a href="#">
-                            <img src="./zeruda_side01.jpg" alt="テキストテキストテキスト" width="400px" height="200px">
+                        <a href="#" class="ranking-content">
+                            <img src="./zeruda_side01.jpg" alt="テキストテキストテキスト" width="400px" height="230px">
                             <h4 class="article-title">タイトルテキストテキストテキストテキストテキストテキスト</h4>
                         </a>
                     </article>
                 
                     <article>
-                        <a href="#">
-                            <img src="./zeruda_side02.jpg" alt="テキストテキストテキスト" width="400px" height="200px">
+                        <a href="#" class="ranking-content">
+                            <img src="./zeruda_side02.jpg" alt="テキストテキストテキスト" width="400px" height="230px">
                             <h4 class="article-title">タイトルテキストテキストテキストテキストテキストテキスト</h4>
                         </a>
                     </article>
                 
                     <article>
-                        <a href="#">
+                        <a href="#" class="ranking-content">
                             <img src="./zeruda_side03.png" alt="テキストテキストテキスト" width="400px" height="300px">
                             <h4 class="article-title">タイトルテキストテキストテキストテキストテキストテキスト</h4>
                         </a>
@@ -132,7 +132,7 @@
                 
                 <section class="archive">
                     <h3 class="side-title">Archive</h3>
-                    <ul class="archive_ul">
+                    <ul class="archive-ul">
                         <li><a href="#">XXXX年XX月</a>(XX)</li>
                         <li><a href="#">XXXX年XX月</a>(XX)</li>
                         <li><a href="#">XXXX年XX月</a>(XX)</li>
@@ -155,14 +155,15 @@
     </main>
 
     <footer>
-        <div class="all_footer">
-            <div class="content_wrapper">
+        <div class="all-footer">
+            <div class="content-wrapper">
                 <section class="item">
                     <h3 class="footer-title">About</h3>
                     <p>
-                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        1986年の初代『ゼルダの伝説』の発売以来、長きにわたってユーザーに支持されている、
+                        任天堂のアクションアドベンチャーゲーム、またはアクションRPG。<br>
+                        初代『ゼルダの伝説』は宮本茂、手塚卓志、中郷俊彦、
+                        近藤浩治などのわずか数人によってファミリーコンピュータ ディスクシステムのローンチソフトとして開発された。
                     </p>
                     <ul class="about-list">
                         <li><a href="#" class="arrow">プロフィール詳細</a></li>
@@ -269,6 +270,15 @@
         width: 800px;
     }
 
+    .meta{
+        display: flex;
+        padding: 0px;
+    }
+
+    .meta a{
+        padding-right: 10px;
+    }
+
     .sidebar{
         margin-left: 5%;
         width: 500px;
@@ -287,27 +297,31 @@
         width: 400px;
     }
 
-    .archive_ul{
+    .ranking-content h4{
+        padding: 0px 10px 30px 10px;
+    }
+
+    .archive-ul{
         list-style: none;
     }
 
-    .archive_ul li{
+    .archive-ul li{
         padding: 20px;
         border-bottom: 1px solid #ccc;
     }
 
-    .archive_ul li:first-child{
+    .archive-ul li:first-child{
         border-top: 1px solid #ccc;
     }
 
-    .archive_ul a{
+    .archive-ul a{
         color: black;
         text-decoration: none;
     }
 
 
 
-    .content_wrapper{
+    .content-wrapper{
         padding-left: 15%;
         display: flex;
         float: left;
